@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './Components/Style.css';
+import Header from './Components/Header'
+import Navbar from './Components/Navbar'
+import Enquire from './Components/Enquire';
+import Footer from './Components/Footer';
+import Details from './Components/Details';
+import FitaAcademy from './Components/FitaAcademy';
+import Features from './Components/Features';
+import Accreditations from './Components/Accreditations';
+import StudentTestimonials from './Components/StudentTestimonials';
+import TopTrendingCourses from './Components/TopTrendingCourses';
+import OurStudentsWorkAt from './Components/OurStudentsWorkat';
+import Tutorials from './Components/Tutorials';
+import MainFooter from './Components/MainFooter';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header/>
+      <Navbar/>
+      <Enquire/>
+      <Footer/>
+      <Details/>
+      <FitaAcademy/>
+      <Features/>
+      <Accreditations/>
+      <StudentTestimonials/>
+      <TopTrendingCourses/>
+      <OurStudentsWorkAt/>
+      <Tutorials/>
+      <MainFooter/>
     </div>
-  );
+  )
 }
 
 export default App;
