@@ -1,11 +1,6 @@
 import React from 'react';
 
 const Footer = () => {
-  // const requestBox = document.querySelector(".request-box");
-  // const quickEnquiry = document.querySelector(".quick-enquiry");
-  // requestBox.addEventListener("click", ()=>{
-  //     quickEnquiry.style.display="block"
-  // })
   return (
     <div>
         <div className='footer-container'>
@@ -68,9 +63,9 @@ const Footer = () => {
         <div className="whatsApp">
         <a href="https://wa.me/9131934880" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
          </div>
-         <div className="live-chat">
+         {/* <div className="live-chat">
            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-weixin"></i></a>
-         </div>
+         </div> */}
         </div>
     </div>
   )
