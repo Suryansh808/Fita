@@ -11,11 +11,11 @@ const Footer = () => {
         <div className='footer-container'>
         <div className="number-box">
             <a href="tel:9131934880"><i class="ri-smartphone-line"></i>+91 9131934880</a>
-        </div>
+        </div>|
         <div className="request-box">
             <h4><a href="">Request a call back</a></h4>
         </div>
-        <div className="quick-enquiry">
+        {/* <div className="quick-enquiry">
             <form className="main-form">
                 <div className="heading"><h1>Quick Enquiry</h1></div>
                 <div className="name">
@@ -64,7 +64,13 @@ const Footer = () => {
                     <button className="btn">Submit</button>
                 </div>
             </form>
-        </div>
+        </div> */}
+        <div className="whatsApp">
+        <a href="https://wa.me/9131934880" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+         </div>
+         <div className="live-chat">
+           <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-weixin"></i></a>
+         </div>
         </div>
     </div>
   )

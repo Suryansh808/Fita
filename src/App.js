@@ -1,7 +1,7 @@
 import React from 'react';
 import './Components/Style.css';
-import Header from './Components/Header'
-import Navbar from './Components/Navbar'
+import Header from './Components/Header';
+import Navbar from './Components/Navbar';
 import Enquire from './Components/Enquire';
 import Footer from './Components/Footer';
 import Details from './Components/Details';
@@ -13,6 +13,7 @@ import TopTrendingCourses from './Components/TopTrendingCourses';
 import OurStudentsWorkAt from './Components/OurStudentsWorkat';
 import Tutorials from './Components/Tutorials';
 import MainFooter from './Components/MainFooter';
+
 
 const App = () => {
   return (

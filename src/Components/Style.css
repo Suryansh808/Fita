@@ -5,6 +5,10 @@
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
 }
+*::selection{
+  background:#000000;
+  color : #fff;
+}
 html,
 body {
   width: 100%;
@@ -13,7 +17,7 @@ body {
 }
 /* --------- Header CSS ------------ */
 .header {
-  width: 99vw;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -25,8 +29,8 @@ body {
   padding: 0 60px;
   font-weight: 600;
   font-size: 13px;
-  position:absolute;
-  z-index: 999;
+  /* position:absolute;
+  z-index: 999; */
 }
 .header a {
   color: #fff;
@@ -45,7 +49,6 @@ body {
 .icon i:hover{
   color:#0764a7;
 }
- 
 /* -----------NavBar CSS--------- */
 .navbar {
   display: flex;
@@ -54,10 +57,12 @@ body {
   position: relative;
   width: 100vw;
   z-index: 9;
-  padding: 50px 0;
+  padding: 10px 0;
 }
 .navbar img {
   padding: 5px 60px;
+  width: 18vw;
+  height: 15vh;
 }
 .navbar #btn {
   color: white;
@@ -83,7 +88,6 @@ body {
   opacity: 0.8;
   cursor: pointer;
 }
-
 .dropdown-content li{
     list-style: none; 
     cursor: pointer;
@@ -93,7 +97,6 @@ body {
 .dropdown{
   position: relative;
   display: inline-block;
-  
 }
 .dropdown-content {
   display: none;
@@ -124,8 +127,6 @@ body {
 #software:hover .software-dropdown{
   display:block;
 }
-
-
 .dropdown-content hr{
     opacity: 0.2;
 }
@@ -146,7 +147,6 @@ body {
    font-size: 15px;
    right: 5px;
    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-   
 }
 .menu li{
     list-style: none; 
@@ -159,7 +159,6 @@ body {
 .drop:hover .menu{
     display: block;
 } 
-
 /* ---------- Enquire Page CSS ------- */
 .enquire-container{
     display: flex;
@@ -198,19 +197,18 @@ body {
 .footer-container .quick-enquiry{
   display: none;
 }
-
 /* ------- Footer CSS ------------ */
-
 .footer-container{
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position:fixed;
+    position:absolute;
+    background: #000;
+    padding: 12px 0;
+    color: #fff;
     bottom: 0px;
-    gap: 1px;
-    z-index: 999;
-    /* display: none; */
+    z-index: 9;
 }
 .footer-container .number-box a{
     text-decoration: none;
@@ -219,14 +217,12 @@ body {
 .footer-container .number-box{
     background: #000;
     color: #fff;
-    padding:10px 30px;
     width: 50%;
     text-align: center;
 }
 .footer-container .request-box{
     background: #000;
     color: #fff;
-    padding:10px 30px;
     width: 50%;
     text-align: center;
 }
@@ -234,9 +230,31 @@ body {
     text-decoration: none;
     color: white;
 }
-
+.footer-container .whatsApp{
+  position: absolute;
+  top: -20vh;
+  right: 3vw;
+  background-color: green;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 2.5rem;
+}
+.whatsApp a{
+  color:#fff;
+}
+.footer-container .live-chat{
+     position: absolute;
+     top: -10vh;
+     right: 5vh;
+     background-color: blue;
+     padding: 4px 8px;
+     font-size: 2.5rem;
+     border-radius: 50%;
+}
+.footer-container .live-chat i{
+   color: #fff;
+}
 /* ------ Details CSS ----------*/
-
 .details-box{
     width: 100vw;
     display: flex;
@@ -270,7 +288,6 @@ body {
 .details-box .s4{
   left: 88vw;
 }
-
 /* -------------FITA Academy CSS --------- */
 .fita-academy-container{
   width: 100vw;
@@ -285,7 +302,6 @@ body {
   position: absolute;
   left: 50px;
   top: 40px;
-
  }
  .fita-academy-container .fita-academy h1{
   color: #1f0862d5;
@@ -316,7 +332,6 @@ body {
   font-size: 1.8vw;
   color: #0C2087;;
  }
-
  .fita-academy-container .quick-enquiry{
   width: 25vw;
   height: 100vh;
@@ -333,9 +348,7 @@ body {
 }
 .quick-enquiry .main-form span{
   font-size: 15px;
-  
 }
-
 .quick-enquiry .main-form h1{
   font-size: 1.8vw;
 }
@@ -396,7 +409,6 @@ body {
   outline: none;
   cursor: pointer;
 }
-
 /* ---------------Features CSS  ---------- */
 .features{
   width: 100vw;
@@ -495,9 +507,7 @@ body {
   font-size: 30px;
   font-weight: bold;
 }
-
 /* --------------Accreditations CSS --------  */
-
 .Accreditations-container{
   width: 100vw;
   margin-top: 50px;
@@ -516,7 +526,6 @@ body {
   justify-content: center;
   gap: 42px;
   padding: 20px 0;
-
 }
 .Accreditations-container img{
   background-color: #fff;
@@ -524,7 +533,6 @@ body {
   border-radius: 10px;
 }
 /* --------------Accreditations CSS End --------  */
-
 
 /* ------------StudentTestimonials CSS  Starts --------- */
 .StudentTestimonialsContainer{
@@ -544,30 +552,33 @@ body {
   margin-bottom: 30px;
 }
 .StudentTestimonialsContainer .student-feedback{
-  width: 90vw;
+  width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* grid-auto-flow: column;
-  display: grid;
-  scroll-behavior: auto;
-  overflow-y: hidden;
-  overscroll-behavior-x:auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none; */
-  gap: 25px;
-  padding: 30px 50px;
+  justify-content: space-evenly;
 }
-/* .StudentTestimonialsContainer .student-feedback ::-webkit-scrollbar{
+.StudentTestimonialsContainer .carrousel{
+  width: 92vw;
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: auto;
+  padding-bottom: 20px;
+}
+.carrousel::-webkit-scrollbar{
   display: none;
-} */
-
+}
 .StudentTestimonialsContainer .student-feedback #student{
-  width: auto !important ;
-  height: 50vh;
+  width: 30vw;
+  height: 60vh;
   box-shadow: 3px 6px 6.86px 0.14px rgba(0,0,0,.3);
   padding: 15px 15px;
   position: relative;
+
 }
 .StudentTestimonialsContainer .student-feedback #student .l-logo{
   font-size: 40px;
@@ -607,9 +618,7 @@ body {
 }
 /* Student Testimonial End */
 
-
 /* ------Top trending Courses CSS Start------- */
-
 .main-course-container{
   width: 100vw;
   margin: 50px 0;
@@ -653,7 +662,6 @@ body {
 }
 
 /* Our-Students-Work-at CSS Start */
-
 .Our-Students-Work-at{
   width: 100vw;
   text-align: center;
@@ -741,7 +749,6 @@ body {
  /*------Tutorials CSS End ------- */
 
  /*-----Main Footer Css Start--- */
-
  .main-footer{
   height: auto !important ;
   width: 100vw;
@@ -782,14 +789,12 @@ body {
   justify-content: center;
   padding: 20px 0;
  }
- 
  .TRENDING-COURSES{
    padding: 20px 60px;
  }
  .TRENDING-COURSES h2{
   padding: 20px 0;
  }
-
  .TRENDING-COURSES ul{
   display: flex;
   align-items: center;
@@ -809,7 +814,6 @@ body {
  .TRENDING-COURSES .read-more a{
   color: #fff;
  }
-
  .location-area{
   width: 100%;
   height: auto;
@@ -827,3 +831,311 @@ body {
  .location-area .address span{
    padding-bottom: 39px;
  }
+
+
+
+ /* -------Social media css start----------- */
+
+ /* .main_back {
+  position: absolute;
+  border-radius: 10px;
+  transform: rotate(90deg);
+  width: 11em;
+  height: 11em;
+  background: linear-gradient(270deg, #03a9f4, #cc39a4, #ffb5d2);
+  z-index: -2;
+  box-shadow: inset 0px 0px 180px 5px #ffffff;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 14em;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+
+.card {
+  width: 60px;
+  height: 60px;
+  border-top-left-radius: 10px;
+  background: lightgrey;
+  transition: .4s ease-in-out, .2s background-color ease-in-out, .2s background-image ease-in-out;
+  background: rgba(255, 255, 255, 0.596);
+  backdrop-filter: blur(5px);
+  border: 1px solid transparent;
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card i{
+  display: none;
+}
+.main:hover i{
+  display: block;
+}
+
+.card .instagram {
+  opacity: 0;
+  transition: .2s ease-in-out;
+  fill: #cc39a4;
+}
+
+.card:nth-child(2) {
+  border-radius: 0px;
+}
+
+.card:nth-child(2) .twitter {
+  opacity: 0;
+  transition: .2s ease-in-out;
+  fill: #03A9F4;
+}
+
+.card:nth-child(3) {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.card:nth-child(3) .dribble {
+  opacity: 0;
+  transition: .2s ease-in-out;
+  fill: #ffb5d2;
+}
+
+.card:nth-child(4) {
+  border-radius: 0px;
+}
+
+.card:nth-child(4) .codepen {
+  opacity: 0;
+  transition: .2s ease-in-out;
+  fill: black;
+}
+
+.card:nth-child(5) {
+  border-radius: 0px;
+}
+
+.card:nth-child(5) .uiverse {
+  position: absolute;
+  margin-left: 0.2em;
+  margin-top: 0.2em;
+  opacity: 0;
+  transition: .2s ease-in-out;
+}
+
+.card:nth-child(6) {
+  border-radius: 0px;
+}
+
+.card:nth-child(6) .discord {
+  opacity: 0;
+  transition: .2s ease-in-out;
+  fill: #8c9eff;
+}
+
+.card:nth-child(7) {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.card:nth-child(7) .github {
+  opacity: 0;
+  transition: .2s ease-in-out;
+  fill: black;
+}
+
+.card:nth-child(8) {
+  border-radius: 0px;
+}
+
+.card:nth-child(8) .telegram {
+  opacity: 0;
+  transition: .2s ease-in-out;
+  fill: #29b6f6;
+}
+
+.card:nth-child(9) {
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.card:nth-child(9) .reddit {
+  opacity: 0;
+  transition: .2s ease-in-out;
+}
+
+.main:hover {
+  width: 14em;
+  cursor: pointer;
+}
+
+.main:hover .main_back {
+  opacity: 0;
+}
+
+.main:hover .card {
+  margin: .2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.main:hover .card:nth-child(5) {
+  border: transparent;
+}
+
+.main:hover .text {
+  opacity: 0;
+  z-index: -3;
+}
+
+.main:hover .instagram {
+  opacity: 1;
+}
+
+.main:hover .twitter {
+  opacity: 1;
+}
+
+.main:hover .dribble {
+  opacity: 1;
+}
+
+.main:hover .codepen {
+  opacity: 1;
+}
+
+.main:hover .uiverse {
+  opacity: 1;
+}
+
+.main:hover .discord {
+  opacity: 1;
+}
+
+.main:hover .github {
+  opacity: 1;
+}
+
+.main:hover .telegram {
+  opacity: 1;
+}
+
+.main:hover .reddit {
+  opacity: 1;
+}
+
+.card:nth-child(1):hover {
+  background-color: #cc39a4;
+}
+
+.card:nth-child(1):hover .instagram {
+  fill: white;
+}
+
+.card:nth-child(2):hover {
+  background-color: #03A9F4;
+}
+
+.card:nth-child(2):hover .twitter {
+  fill: white;
+}
+
+.card:nth-child(3):hover {
+  background-color: #ffb5d2;
+}
+
+.card:nth-child(3):hover .dribble {
+  fill: white;
+}
+
+.card:nth-child(4):hover {
+  background-color: #1E1F26;
+}
+
+.card:nth-child(4):hover .codepen {
+  fill: white;
+}
+
+.card:nth-child(5):hover {
+  animation: backgroundIMG .1s;
+  animation-fill-mode: forwards;
+}
+
+.card:nth-child(5):hover .uiverse #paint0_linear_501_142 stop {
+  stop-color: white;
+}
+
+.card:nth-child(5):hover .uiverse #paint1_linear_501_142 stop {
+  stop-color: white;
+}
+
+.card:nth-child(5):hover .uiverse #paint2_linear_501_142 stop {
+  stop-color: white;
+}
+
+@keyframes backgroundIMG {
+  100% {
+    background-image: linear-gradient(#BF66FF,#6248FF,#00DDEB);
+  }
+}
+
+.card:nth-child(6):hover {
+  background-color: #8c9eff;
+}
+
+.card:nth-child(6):hover .discord {
+  fill: white;
+}
+
+.card:nth-child(7):hover {
+  background-color: black;
+}
+
+.card:nth-child(7):hover .github {
+  fill: white;
+}
+
+.card:nth-child(8):hover {
+  background-color: #29b6f6;
+}
+
+.card:nth-child(8):hover .telegram > path:nth-of-type(1) {
+  fill: white;
+}
+
+.card:nth-child(8):hover .telegram > path:nth-of-type(2) {
+  fill: #29b6f6;
+}
+
+.card:nth-child(8):hover .telegram > path:nth-of-type(3) {
+  fill: #29b6f6;
+}
+
+.card:nth-child(9):hover {
+  background-color: rgb(255,69,0);
+}
+
+.card:nth-child(9) .reddit > g circle {
+  fill: rgb(255,69,0);
+}
+
+.card:nth-child(9) .reddit > g path {
+  fill: white;
+}
+
+.text {
+  position: absolute;
+  font-size: 0.7em;
+  transition: .4s ease-in-out;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.33em;
+  z-index: 3;
+} */

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Style.css';
-import logo from './Img/fita-logo.png';
+import logo from './Img/Appteknowlogo.png';
 
 
 const Navbar = () => {
