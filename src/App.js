@@ -1,5 +1,4 @@
 import React from 'react';
-import './Components/Style.css';
 import Header from './Components/Header';
 import Navbar from './Components/Navbar';
 import Enquire from './Components/Enquire';
@@ -17,7 +16,7 @@ import MainFooter from './Components/MainFooter';
 
 const App = () => {
   return (
-    <div className='App'>
+    <div basename="/fita">
       <Header/>
       <Navbar/>
       <Enquire/>

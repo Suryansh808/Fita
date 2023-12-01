@@ -8,7 +8,7 @@ const Footer = () => {
             <a href="tel:9131934880"><i class="ri-smartphone-line"></i>+91 9131934880</a>
         </div>|
         <div className="request-box">
-            <h4><a href="">Request a call back</a></h4>
+            <h4><a href="">Request a call back</a></h4>         
         </div>
         {/* <div className="quick-enquiry">
             <form className="main-form">
