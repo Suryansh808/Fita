@@ -16,7 +16,7 @@ import MainFooter from './Components/MainFooter';
 
 const App = () => {
   return (
-    <div basename="/fita" className='App'>
+    <div basename="/Fita" className='App'>
       <Header/>
       <Navbar/>
       <Enquire/>
@@ -32,5 +32,5 @@ const App = () => {
       <MainFooter/>
     </div>
   );
-};
+}
 export default App;
