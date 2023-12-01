@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fita/static/css/main.a1554faa.css",
-    "main.js": "/fita/static/js/main.9d5076f5.js",
+    "main.js": "/fita/static/js/main.888387f6.js",
     "static/js/787.fc3821ca.chunk.js": "/fita/static/js/787.fc3821ca.chunk.js",
     "static/media/students-placement-1.jpg": "/fita/static/media/students-placement-1.2067c79ed4eadb1885e8.jpg",
     "static/media/Appteknowlogo.png": "/fita/static/media/Appteknowlogo.d35c7ea5366d9003d3f4.png",
@@ -9,11 +9,11 @@
     "static/media/full-stack-developer-training.webp": "/fita/static/media/full-stack-developer-training.0143a260f5e8dfcc5cb4.webp",
     "index.html": "/fita/index.html",
     "main.a1554faa.css.map": "/fita/static/css/main.a1554faa.css.map",
-    "main.9d5076f5.js.map": "/fita/static/js/main.9d5076f5.js.map",
+    "main.888387f6.js.map": "/fita/static/js/main.888387f6.js.map",
     "787.fc3821ca.chunk.js.map": "/fita/static/js/787.fc3821ca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1554faa.css",
-    "static/js/main.9d5076f5.js"
+    "static/js/main.888387f6.js"
   ]
 }
